@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header{
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 65px;
+  background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+color: white;
+padding:  20px;
+}
+
+.header_image{
+  height: 80px;
+margin-right: 6px;
+}
+
+.header_title{
+  font-size: 20px;
+  margin-right: auto;
+}
+
+.header_project{
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+main{
+  padding: 30px;
+}
+
+.form {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 17px;
+}
+
+.form--input {
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  border: 1px solid #D5D4D8;
+  text-indent: 5px;
+}
+
+.form--button {
+  grid-column: 1 / -1;
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
   color: white;
+  border: none;
+  cursor: pointer;
+  padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.memeImage{
+  height: 30rem;
+  padding: 20px;
+  align-self: center;
+  align-content: center;
+  
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.meme--image {
+   
+  height: 30rem;
+  border-radius: 3px;
+  padding: 20px;
+  margin: 20px;
+}
+
+
+
+.bottom {
+  position: absolute;
+  bottom: 0%;
+  left:  50%;
+}
+
+.top {
+  position: absolute;
+  top: 40%;
+  left:  50%;
+}
+ 
+.meme--text {
+  
+ 
+  
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow:
+      2px 2px 0 #000,
+      -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+      0 2px 0 #000,
+      2px 0 0 #000,
+      0 -2px 0 #000,
+      -2px 0 0 #000,
+      2px 2px 5px #000;
 }
